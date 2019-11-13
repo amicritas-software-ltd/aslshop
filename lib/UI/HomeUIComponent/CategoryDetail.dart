@@ -47,10 +47,10 @@ class _categoryDetailState extends State<categoryDetail> {
   ///
   @override
   void initState() {
-     Timer(Duration(seconds: 3),(){
-setState(() {
-  loadImage=false;
-});
+    Timer(Duration(seconds: 3),(){
+      setState(() {
+        loadImage=false;
+      });
     });
     // TODO: implement initState
     super.initState();
@@ -745,11 +745,11 @@ class loadingMenuItemCard extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
-                          Container(
-                            height: 185.0,
-                            width: 160.0,
-                            color: Colors.black12,
-                          ),
+                      Container(
+                        height: 185.0,
+                        width: 160.0,
+                        color: Colors.black12,
+                      ),
                       Padding(
                           padding: const EdgeInsets.only(left: 10.0, right: 5.0,top: 12.0),
                           child: Container(

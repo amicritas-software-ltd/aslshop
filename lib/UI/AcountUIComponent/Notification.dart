@@ -38,7 +38,7 @@ class _notificationState extends State<notification> {
   Widget build(BuildContext context) {
     MediaQueryData mediaQuery = MediaQuery.of(context);
     return Scaffold(
-      backgroundColor: Colors.white,
+        backgroundColor: Colors.white,
         appBar: AppBar(
           title: Text(
             "Notification",
@@ -68,7 +68,7 @@ class _notificationState extends State<notification> {
                     });
                   },
                   background: Container(
-                    color: Color.fromRGBO(101, 36, 255, .20),
+                    color: Colors.white30,
                   ),
                   child: Container(
                     height: 88.0,

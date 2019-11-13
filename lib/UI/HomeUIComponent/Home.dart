@@ -144,7 +144,7 @@ class _MenuState extends State<Menu> with TickerProviderStateMixin {
 
     /// CategoryIcon Component
     var categoryIcon = Container(
-      color: Color.fromRGBO(101, 36, 255,.25),
+      color: Colors.white30,
       padding: EdgeInsets.only(top: 20.0),
       alignment: AlignmentDirectional.centerStart,
       child: Column(
@@ -214,7 +214,7 @@ class _MenuState extends State<Menu> with TickerProviderStateMixin {
 
     /// ListView a WeekPromotion Component
     var PromoHorizontalList = Container(
-      color: Color.fromRGBO(101, 36, 255, .25),
+      color: Colors.white30,
       height: 230.0,
       padding: EdgeInsets.only(bottom: 40.0),
       child: Column(
@@ -281,7 +281,7 @@ class _MenuState extends State<Menu> with TickerProviderStateMixin {
       /// To set FlashSale Scrolling horizontal
       child: ListView(
         scrollDirection: Axis.horizontal,
-        
+
         children: <Widget>[
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -421,7 +421,7 @@ class _MenuState extends State<Menu> with TickerProviderStateMixin {
     /// Category Component in bottom of flash sale
     var categoryImageBottom = Container(
       height: 310.0,
-      color: Color.fromRGBO(101, 36, 255, .25),
+      color: Colors.white30,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
@@ -531,7 +531,7 @@ class _MenuState extends State<Menu> with TickerProviderStateMixin {
     ///  Grid item in bottom of Category
     var Grid = SingleChildScrollView(
       child: Container(
-        color: Color.fromRGBO(101, 36, 255, .25),
+        color: Colors.white30,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[

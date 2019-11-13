@@ -11,7 +11,7 @@ class AppbarGradient extends StatefulWidget {
 class _AppbarGradientState extends State<AppbarGradient> {
   String CountNotice = "4";
 
-    /// Build Appbar in layout home
+  /// Build Appbar in layout home
   @override
   Widget build(BuildContext context) {
 
@@ -73,8 +73,8 @@ class _AppbarGradientState extends State<AppbarGradient> {
                   ),
                   Padding(
                       padding: EdgeInsets.only(
-                    left: 17.0,
-                  )),
+                        left: 17.0,
+                      )),
                   Padding(
                     padding: EdgeInsets.only(top: 3.0),
                     child: Text(
@@ -114,7 +114,7 @@ class _AppbarGradientState extends State<AppbarGradient> {
                   "assets/img/bell5.png",
                   height: 24.0,
                 ),
-               /* CircleAvatar(
+                /* CircleAvatar(
                   radius: 8.6,
                   backgroundColor: Colors.redAccent,
                   child: Text(

@@ -58,7 +58,7 @@ class _settingAcountState extends State<settingAcount> {
                 child: Container(
                   height: 50.0,
                   width: 1000.0,
-                  color: Colors.red,
+                  color: Color.fromRGBO(101, 36, 255, 99),
                   child: Padding(
                     padding: const EdgeInsets.only(
                         top: 13.0, left: 20.0, bottom: 15.0),
@@ -104,7 +104,7 @@ class setting extends StatelessWidget {
       child: Container(
         height: 235.0,
         decoration: BoxDecoration(
-          color: Color.fromRGBO(101, 36, 255, .25),
+          color: Colors.white30,
         ),
         child: Padding(
           padding: const EdgeInsets.only(left: 20.0),
@@ -137,7 +137,7 @@ class setting extends StatelessWidget {
                       ),
                       Icon(
                         Icons.keyboard_arrow_right,
-                        color: Colors.yellowAccent,
+                        color: Colors.black,
                       )
                     ]),
               ),
@@ -159,7 +159,7 @@ class setting extends StatelessWidget {
                       ),
                       Icon(
                         Icons.keyboard_arrow_right,
-                        color: Colors.yellowAccent,
+                        color: Colors.black,
                       )
                     ]),
               ),
@@ -181,7 +181,7 @@ class setting extends StatelessWidget {
                       ),
                       Icon(
                         Icons.keyboard_arrow_right,
-                        color: Colors.yellowAccent,
+                        color: Colors.black,
                       )
                     ]),
               ),

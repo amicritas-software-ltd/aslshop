@@ -9,18 +9,18 @@ class onBoarding extends StatefulWidget {
 }
 
 var _fontHeaderStyle = TextStyle(
-  fontFamily: "Popins",
-  fontSize: 21.0,
-  fontWeight: FontWeight.w800,
-  color: Colors.black87,
-  letterSpacing: 1.5
+    fontFamily: "Popins",
+    fontSize: 21.0,
+    fontWeight: FontWeight.w800,
+    color: Colors.black87,
+    letterSpacing: 1.5
 );
 
 var _fontDescriptionStyle = TextStyle(
-  fontFamily: "Sans",
-  fontSize: 15.0,
-  color: Colors.black,
-  fontWeight: FontWeight.w400
+    fontFamily: "Sans",
+    fontSize: 15.0,
+    color: Colors.black,
+    fontWeight: FontWeight.w400
 );
 
 ///
@@ -28,7 +28,7 @@ var _fontDescriptionStyle = TextStyle(
 ///
 final pages = [
   new PageViewModel(
-      pageColor:  Color.fromRGBO(101, 36, 255, .25),
+      pageColor:  Colors.white30,
       iconColor: Colors.black,
       bubbleBackgroundColor: Color.fromRGBO(101, 36, 255, .25),
       title: Text(
@@ -37,8 +37,8 @@ final pages = [
       body: Container(
         height: 250.0,
         child: Text(
-          'ASL Shopping App \nbuy your desired product easily.',textAlign: TextAlign.center,
-          style: _fontDescriptionStyle
+            'ASL Shopping App \nbuy your desired product easily.',textAlign: TextAlign.center,
+            style: _fontDescriptionStyle
         ),
       ),
       mainImage: Image.asset(
@@ -49,7 +49,7 @@ final pages = [
       )),
 
   new PageViewModel(
-      pageColor:  Color.fromRGBO(101, 36, 255, .25),
+      pageColor:  Colors.white30,
       iconColor: Colors.black,
       bubbleBackgroundColor: Color.fromRGBO(101, 36, 255, .25),
       title: Text(
@@ -70,7 +70,7 @@ final pages = [
       )),
 
   new PageViewModel(
-      pageColor:  Color.fromRGBO(101, 36, 255, .25),
+      pageColor:  Colors.white30,
       iconColor: Colors.black,
       bubbleBackgroundColor: Color.fromRGBO(101, 36, 255, .25),
       title: Text(
@@ -102,13 +102,13 @@ class _onBoardingState extends State<onBoarding> {
       doneText: Text("DONE",style: _fontDescriptionStyle.copyWith(color: Colors.deepPurpleAccent,fontWeight: FontWeight.w800,letterSpacing: 1.0),),
       onTapDoneButton: (){
         Navigator.of(context).pushReplacement(PageRouteBuilder(pageBuilder: (_,__,___)=> new ChoseLogin(),
-        transitionsBuilder: (_,Animation<double> animation,__,Widget widget){
-          return Opacity(
-            opacity: animation.value,
-            child: widget,
-          );
-        },
-        transitionDuration: Duration(milliseconds: 1500),
+          transitionsBuilder: (_,Animation<double> animation,__,Widget widget){
+            return Opacity(
+              opacity: animation.value,
+              child: widget,
+            );
+          },
+          transitionDuration: Duration(milliseconds: 1500),
         ));
       },
     );

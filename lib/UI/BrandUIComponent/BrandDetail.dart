@@ -259,7 +259,7 @@ class _brandDetailState extends State<brandDetail> {
                               ontap: () {
                                 Navigator.of(context).push(PageRouteBuilder(
                                     pageBuilder: (_, __, ___) =>
-                                        new privatemessage(brand)));
+                                    new privatemessage(brand)));
                               },
                             ),
                             Padding(padding: EdgeInsets.only(top: 10.0)),
@@ -329,7 +329,7 @@ class _brandDetailState extends State<brandDetail> {
                                 height: 45.9,
                                 width: 1.0,
                                 decoration:
-                                    BoxDecoration(color: Colors.black12),
+                                BoxDecoration(color: Colors.black12),
                               )
                             ],
                           ),
@@ -359,7 +359,7 @@ class _brandDetailState extends State<brandDetail> {
           /// Create Grid Item
           SliverGrid(
             delegate: SliverChildBuilderDelegate(
-              (BuildContext context, int index) {
+                  (BuildContext context, int index) {
                 return Container(
                   decoration: BoxDecoration(
                       color: Colors.white,
@@ -392,7 +392,7 @@ class _brandDetailState extends State<brandDetail> {
                           Padding(padding: EdgeInsets.only(top: 7.0)),
                           Padding(
                             padding:
-                                const EdgeInsets.only(left: 15.0, right: 15.0),
+                            const EdgeInsets.only(left: 15.0, right: 15.0),
                             child: Text(
                               brand.item.itemName,
                               style: TextStyle(
@@ -407,7 +407,7 @@ class _brandDetailState extends State<brandDetail> {
                           Padding(padding: EdgeInsets.only(top: 1.0)),
                           Padding(
                             padding:
-                                const EdgeInsets.only(left: 15.0, right: 15.0),
+                            const EdgeInsets.only(left: 15.0, right: 15.0),
                             child: Text(
                               brand.item.itemPrice,
                               style: TextStyle(
@@ -493,9 +493,9 @@ class buttonCustom extends StatelessWidget {
         ),
         child: Center(
             child: Text(
-          txt,
-          style: TextStyle(color: Colors.white, fontFamily: "Sans"),
-        )),
+              txt,
+              style: TextStyle(color: Colors.white, fontFamily: "Sans"),
+            )),
       ),
     );
   }

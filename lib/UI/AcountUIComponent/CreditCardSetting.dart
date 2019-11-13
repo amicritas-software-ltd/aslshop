@@ -52,14 +52,14 @@ class _creditCardSettingState extends State<creditCardSetting> {
       ),
       body: SingleChildScrollView(
         child: Container(
-          color: Color.fromRGBO(101, 36, 255, .20),
+          color: Colors.white30,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
               Padding(
                 padding:
-                    const EdgeInsets.only(top: 10.0, left: 15.0, right: 15.0),
+                const EdgeInsets.only(top: 10.0, left: 15.0, right: 15.0),
                 child: Stack(
                   children: <Widget>[
                     Image.asset(
@@ -91,7 +91,7 @@ class _creditCardSettingState extends State<creditCardSetting> {
                               Text(
                                 "Card Name",
                                 style:
-                                    _txtCustomSub.copyWith(color: Colors.white),
+                                _txtCustomSub.copyWith(color: Colors.white),
                               ),
                               Text("CVV / CVC",
                                   style: _txtCustomSub.copyWith(
@@ -129,7 +129,7 @@ class _creditCardSettingState extends State<creditCardSetting> {
               creditCard(),
               Padding(
                 padding:
-                    const EdgeInsets.only(top: 30.0, left: 15.0, bottom: 10.0),
+                const EdgeInsets.only(top: 30.0, left: 15.0, bottom: 10.0),
                 child: Text(
                   "Transactions Details",
                   style: _txtCustomHead.copyWith(fontSize: 16.0),
@@ -152,7 +152,7 @@ class creditCard extends StatelessWidget {
       padding: const EdgeInsets.only(top: 20.0, left: 15.0, right: 15.0),
       child: Container(
         decoration: BoxDecoration(
-            color: Color.fromRGBO(255, 222, 92, 99),
+            color: Colors.black.withOpacity(.3),
             borderRadius: BorderRadius.all(Radius.circular(5.0)),
             boxShadow: [
               BoxShadow(
@@ -165,7 +165,7 @@ class creditCard extends StatelessWidget {
           children: <Widget>[
             Padding(
               padding:
-                  const EdgeInsets.only(top: 20.0, left: 20.0, right: 60.0),
+              const EdgeInsets.only(top: 20.0, left: 20.0, right: 60.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -258,7 +258,7 @@ class creditCard extends StatelessWidget {
             Container(
                 height: 50.0,
                 width: 1000.0,
-                color: Colors.green,
+                color: Color.fromRGBO(101, 36, 255, 99),
                 child: Center(
                     child: Text("Edit Details",
                         style: _txtCustomHead.copyWith(
@@ -280,7 +280,7 @@ class transactionsDetail extends StatelessWidget {
           top: 10.0, left: 15.0, right: 15.0, bottom: 10.0),
       child: Container(
         decoration: BoxDecoration(
-          color: Color.fromRGBO(255, 222, 92, 99),
+          color: Colors.black.withOpacity(.3),
           borderRadius: BorderRadius.all(Radius.circular(5.0)),
           boxShadow: [
             BoxShadow(
@@ -359,7 +359,7 @@ class dataTransaction extends StatelessWidget {
               ),
               Text(price,
                   style: _txtCustomSub.copyWith(
-                    color: Colors.redAccent,
+                    color: Colors.green,
                     fontSize: 16.0,
                   )),
             ],

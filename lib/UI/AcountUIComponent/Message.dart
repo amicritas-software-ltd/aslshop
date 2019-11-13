@@ -9,7 +9,7 @@ class _chatState extends State<chat> {
  @override
  Widget build(BuildContext context) {
   return Scaffold(
-    backgroundColor: Color.fromRGBO(101, 36, 255, 99),
+   backgroundColor: Color.fromRGBO(101, 36, 255, 99),
    appBar: AppBar(
     title: Text(
      "Message",

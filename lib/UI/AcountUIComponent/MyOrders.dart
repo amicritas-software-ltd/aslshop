@@ -8,7 +8,7 @@ class order extends StatefulWidget {
 class _orderState extends State<order> {
 
   static var _txtCustom = TextStyle(
-    color: Colors.black54,
+    color: Colors.black,
     fontSize: 15.0,
     fontWeight: FontWeight.w500,
     fontFamily: "Gotik",
@@ -65,21 +65,22 @@ class _orderState extends State<order> {
     MediaQueryData mediaQueryData = MediaQuery.of(context);
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color.fromRGBO(101, 36, 255, 99),
         title: Text(
           "Track My Order",
           style: TextStyle(
               fontWeight: FontWeight.w700,
               fontSize: 20.0,
-              color: Colors.black54,
+              color: Colors.white,
               fontFamily: "Gotik"),
         ),
         centerTitle: true,
-        iconTheme: IconThemeData(color: Color(0xFF6991C7)),
+        iconTheme: IconThemeData(color: Colors.black),
         elevation: 0.0,
       ),
       body: SingleChildScrollView(
         child: Container(
-          color: Color.fromRGBO(101, 36, 255, .25),
+          color: Colors.black.withOpacity(.2),
           width: 800.0,
           child: Padding(
             padding: const EdgeInsets.only(top: 20.0, left: 25.0),
@@ -100,7 +101,7 @@ class _orderState extends State<order> {
                 Text(
                   "Orders",
                   style: _txtCustom.copyWith(
-                      color: Colors.black54,
+                      color: Colors.black,
                       fontSize: 18.0,
                       fontWeight: FontWeight.w600),
                 ),
@@ -175,11 +176,11 @@ class _orderState extends State<order> {
                   child: Container(
                     height: 130.0,
                     decoration: BoxDecoration(
-                        color: Colors.redAccent,
+                        color: Colors.white30,
                         borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.white,
+                            color: Colors.black.withOpacity(.4),
                             blurRadius: 4.5,
                             spreadRadius: 1.0,
                           )
