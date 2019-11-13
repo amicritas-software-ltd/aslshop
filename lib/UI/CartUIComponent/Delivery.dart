@@ -28,11 +28,11 @@ class _deliveryState extends State<delivery> {
         ),
         centerTitle: true,
         backgroundColor: Color.fromRGBO(101, 36, 255, 99),
-        iconTheme: IconThemeData(color: Color.fromRGBO(101, 36, 255, 99)),
+        iconTheme: IconThemeData(color: Colors.black),
       ),
       body: SingleChildScrollView(
         child: Container(
-          color: Color.fromRGBO(101, 36, 255, .20),
+          color: Colors.white30,
           child: Padding(
             padding: const EdgeInsets.only(top: 30.0, left: 20.0, right: 20.0),
             child: Column(
@@ -84,7 +84,7 @@ class _deliveryState extends State<delivery> {
                     height: 55.0,
                     width: 300.0,
                     decoration: BoxDecoration(
-                        color: Colors.redAccent,
+                        color: Color.fromRGBO(101, 36, 255, 99),
                         borderRadius: BorderRadius.all(Radius.circular(40.0))),
                     child: Center(
                       child: Text(

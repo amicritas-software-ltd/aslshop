@@ -94,21 +94,21 @@ class _privatemessageState extends State<privatemessage>
                   margin: new EdgeInsets.symmetric(horizontal: 3.0),
                   child: Theme.of(context).platform == TargetPlatform.iOS
                       ? new CupertinoButton(
-                          child: new Text("Submit"),
-                          onPressed: _isWriting
-                              ? () => _submitMsg(_textController.text)
-                              : null)
+                      child: new Text("Submit"),
+                      onPressed: _isWriting
+                          ? () => _submitMsg(_textController.text)
+                          : null)
                       : new IconButton(
-                          icon: new Icon(Icons.message),
-                          onPressed: _isWriting
-                              ? () => _submitMsg(_textController.text)
-                              : null,
-                        )),
+                    icon: new Icon(Icons.message),
+                    onPressed: _isWriting
+                        ? () => _submitMsg(_textController.text)
+                        : null,
+                  )),
             ],
           ),
           decoration: Theme.of(context).platform == TargetPlatform.iOS
               ? new BoxDecoration(
-                  border: new Border(top: new BorderSide(color: Colors.brown)))
+              border: new Border(top: new BorderSide(color: Colors.brown)))
               : null),
     );
   }

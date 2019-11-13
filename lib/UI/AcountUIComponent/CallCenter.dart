@@ -40,7 +40,7 @@ class _callCenterState extends State<callCenter> {
     elevation: 0.0,
    ),
    body: Container(
-       color: Color.fromRGBO(101, 36, 255, .25),
+       color: Colors.white30,
        child: Center(
            child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,

@@ -45,48 +45,48 @@ class _profilState extends State<profil> {
           Container(
 
           ),
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Container(
-              height: 100.0,
-              width: 100.0,
-              decoration: BoxDecoration(
-                  border: Border.all(color: Colors.black, width: 2.5),
-                  shape: BoxShape.circle,
-                  image: DecorationImage(
-                      image: AssetImage("assets/img/womanface.jpg"))),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 5.0),
-              child: Text(
-                "Malinda Smith",
-                style: _txtName,
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Container(
+                height: 100.0,
+                width: 100.0,
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black, width: 2.5),
+                    shape: BoxShape.circle,
+                    image: DecorationImage(
+                        image: AssetImage("assets/img/womanface.jpg"))),
               ),
-            ),
-            InkWell(
-              onTap: null,
-              child: Padding(
-                padding: const EdgeInsets.only(top: 0.0),
+              Padding(
+                padding: const EdgeInsets.only(top: 5.0),
                 child: Text(
-                  "Edit Profile",
-                  style: _txtEdit,
+                  "Malinda Smith",
+                  style: _txtName,
                 ),
               ),
-            ),
-          ],
-        ),
-        Container(
+              InkWell(
+                onTap: null,
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 0.0),
+                  child: Text(
+                    "Edit Profile",
+                    style: _txtEdit,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          Container(
 
-        ),
-      ],
+          ),
+        ],
       ),
     );
 
     return SingleChildScrollView(
       child: Container(
-        color: Color.fromRGBO(101, 36, 255, .20),
+        color: Colors.white30,
         child: Stack(
           children: <Widget>[
             /// Setting Header Banner
@@ -129,7 +129,7 @@ class _profilState extends State<profil> {
                     tap: () {
                       Navigator.of(context).push(PageRouteBuilder(
                           pageBuilder: (_, __, ___) =>
-                              new creditCardSetting()));
+                          new creditCardSetting()));
                     },
                   ),
                   Padding(

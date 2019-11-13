@@ -50,7 +50,7 @@ class _brandState extends State<brand> {
         /// Calling variable appbar
           appBar: _appbar,
           body: Container(
-            color: Color.fromRGBO(101, 36, 255, .25),
+            color: Colors.white30,
             child: CustomScrollView(
               /// Create List Menu
               slivers: <Widget>[

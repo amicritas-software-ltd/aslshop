@@ -37,13 +37,13 @@ class _chatItemState extends State<chatItem> with TickerProviderStateMixin {
           new Flexible(
             child: _messages.length>0
                 ?  Container(
-                    child: new ListView.builder(
-                      itemBuilder: (_, int index) => _messages[index],
-                      itemCount: _messages.length,
-                      reverse: true,
-                      padding: new EdgeInsets.all(10.0),
-                    ),
-                  ): NoMessage(),
+              child: new ListView.builder(
+                itemBuilder: (_, int index) => _messages[index],
+                itemCount: _messages.length,
+                reverse: true,
+                padding: new EdgeInsets.all(10.0),
+              ),
+            ): NoMessage(),
           ),
           /// Line
           new Divider(height: 1.5),
@@ -114,7 +114,7 @@ class _chatItemState extends State<chatItem> with TickerProviderStateMixin {
           ),
           decoration: Theme.of(context).platform == TargetPlatform.iOS
               ? new BoxDecoration(
-                  border: new Border(top: new BorderSide(color: Colors.brown)))
+              border: new Border(top: new BorderSide(color: Colors.brown)))
               : null),
     );
   }
@@ -199,19 +199,19 @@ class NoMessage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
         child: Container(
-      child: ListView(
-        children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.only(top:100.0),
-            child: Center(
-              child: Opacity(
-                opacity: 0.5,
-                  child: Image.asset("assets/imgIllustration/IlustrasiMessage.png",height: 220.0,)),
-            ),
+          child: ListView(
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.only(top:100.0),
+                child: Center(
+                  child: Opacity(
+                      opacity: 0.5,
+                      child: Image.asset("assets/imgIllustration/IlustrasiMessage.png",height: 220.0,)),
+                ),
+              ),
+              Center(child: Text("Not Have Message", style: TextStyle( fontWeight: FontWeight.w300,color: Colors.black12,fontSize: 17.0,fontFamily: "Popins"),))
+            ],
           ),
-          Center(child: Text("Not Have Message", style: TextStyle( fontWeight: FontWeight.w300,color: Colors.black12,fontSize: 17.0,fontFamily: "Popins"),))
-        ],
-      ),
-    ));
+        ));
   }
 }

@@ -34,13 +34,13 @@ class _aboutAppsState extends State<aboutApps> {
               fontFamily: "Gotik"),
         ),
         centerTitle: true,
-        iconTheme: IconThemeData(color: Color.fromRGBO(101, 36, 255, 99)),
-        backgroundColor: Color.fromRGBO(101, 36, 255, 50),
+        iconTheme: IconThemeData(color: Colors.black),
+        backgroundColor: Color.fromRGBO(101, 36, 255, 99),
         elevation: 0.0,
       ),
       body: SingleChildScrollView(
         child: Container(
-          color: Color.fromRGBO(101, 36, 255, .25),
+          color: Colors.white30,
           child: Column(
             children: <Widget>[
               Padding(

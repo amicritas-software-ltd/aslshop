@@ -61,7 +61,7 @@ class _paymentState extends State<payment> {
       ),
       body: SingleChildScrollView(
         child: Container(
-          color: Color.fromRGBO(101, 36, 255, .25),
+          color: Colors.white30,
           child: Padding(
             padding: const EdgeInsets.only(top: 30.0, left: 20.0, right: 20.0),
             child: Column(
@@ -221,7 +221,7 @@ class _paymentState extends State<payment> {
                     height: 55.0,
                     width: 300.0,
                     decoration: BoxDecoration(
-                        color: Colors.redAccent,
+                        color: Color.fromRGBO(101, 36, 255, 99),
                         borderRadius: BorderRadius.all(Radius.circular(40.0))),
                     child: Center(
                       child: Text(
@@ -279,20 +279,20 @@ _showDialog(BuildContext ctx) {
         ),
         Center(
             child: Padding(
-          padding: const EdgeInsets.only(top: 16.0),
-          child: Text(
-            "Yuppy!!",
-            style: _txtCustomHead,
-          ),
-        )),
+              padding: const EdgeInsets.only(top: 16.0),
+              child: Text(
+                "Yuppy!!",
+                style: _txtCustomHead,
+              ),
+            )),
         Center(
             child: Padding(
-          padding: const EdgeInsets.only(top: 30.0, bottom: 40.0),
-          child: Text(
-            "Your Payment Receive to Seller",
-            style: _txtCustomSub,
-          ),
-        )),
+              padding: const EdgeInsets.only(top: 30.0, bottom: 40.0),
+              child: Text(
+                "Your Payment Receive to Seller",
+                style: _txtCustomSub,
+              ),
+            )),
       ],
     ),
   );

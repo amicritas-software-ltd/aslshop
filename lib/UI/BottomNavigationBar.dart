@@ -5,81 +5,81 @@ import 'package:treva_shop_flutter/UI/HomeUIComponent/Home.dart';
 import 'package:treva_shop_flutter/UI/AcountUIComponent/Profile.dart';
 
 class bottomNavigationBar extends StatefulWidget {
- @override
- _bottomNavigationBarState createState() => _bottomNavigationBarState();
+  @override
+  _bottomNavigationBarState createState() => _bottomNavigationBarState();
 }
 
 class _bottomNavigationBarState extends State<bottomNavigationBar> {
- int currentIndex = 0;
- /// Set a type current number a layout class
- Widget callPage(int current) {
-  switch (current) {
-   case 0:
-    return new Menu();
-   case 1:
-    return new brand();
-   case 2:
-    return new cart();
-   case 3:
-    return new profil();
-    break;
-   default:
-    return Menu();
+  int currentIndex = 0;
+  /// Set a type current number a layout class
+  Widget callPage(int current) {
+    switch (current) {
+      case 0:
+        return new Menu();
+      case 1:
+        return new brand();
+      case 2:
+        return new cart();
+      case 3:
+        return new profil();
+        break;
+      default:
+        return Menu();
+    }
   }
- }
 
- /// Build BottomNavigationBar Widget
- @override
- Widget build(BuildContext context) {
-  return Scaffold(
-   body: callPage(currentIndex),
-   bottomNavigationBar: Theme(
-       data: Theme.of(context).copyWith(
-           canvasColor: Color.fromRGBO(77,255,160, 99),
-           textTheme: Theme.of(context).textTheme.copyWith(
-               caption: TextStyle(color: Colors.black.withOpacity(.8)))),
-       child: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        currentIndex: currentIndex,
-        fixedColor: Color(0xFF6991C7),
-        onTap: (value) {
-         currentIndex = value;
-         setState(() {});
-        },
-        items: [
-         BottomNavigationBarItem(
-             icon: Icon(
-              Icons.home,
-              size: 23.0,
-             ),
-             title: Text(
-              "Home",
-              style: TextStyle(fontFamily: "Berlin", letterSpacing: 0.5),
-             )),
-         BottomNavigationBarItem(
-             icon: Icon(Icons.shop),
-             title: Text(
-              "Brand",
-              style: TextStyle(fontFamily: "Berlin", letterSpacing: 0.5),
-             )),
-         BottomNavigationBarItem(
-             icon: Icon(Icons.shopping_cart),
-             title: Text(
-              "Cart",
-              style: TextStyle(fontFamily: "Berlin", letterSpacing: 0.5),
-             )),
-         BottomNavigationBarItem(
-             icon: Icon(
-              Icons.person,
-              size: 24.0,
-             ),
-             title: Text(
-              "Acount",
-              style: TextStyle(fontFamily: "Berlin", letterSpacing: 0.5),
-             )),
-        ],
-       )),
-  );
- }
+  /// Build BottomNavigationBar Widget
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: callPage(currentIndex),
+      bottomNavigationBar: Theme(
+          data: Theme.of(context).copyWith(
+              canvasColor: Color.fromRGBO(101, 36, 255, 99),
+              textTheme: Theme.of(context).textTheme.copyWith(
+                  caption: TextStyle(color: Colors.white))),
+          child: BottomNavigationBar(
+            type: BottomNavigationBarType.fixed,
+            currentIndex: currentIndex,
+            fixedColor: Color.fromRGBO(213, 213, 213, 99),
+            onTap: (value) {
+              currentIndex = value;
+              setState(() {});
+            },
+            items: [
+              BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.home,
+                    size: 23.0,
+                  ),
+                  title: Text(
+                    "Home",
+                    style: TextStyle(fontFamily: "Berlin", letterSpacing: 0.5),
+                  )),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.shop),
+                  title: Text(
+                    "Brand",
+                    style: TextStyle(fontFamily: "Berlin", letterSpacing: 0.5),
+                  )),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.shopping_cart),
+                  title: Text(
+                    "Cart",
+                    style: TextStyle(fontFamily: "Berlin", letterSpacing: 0.5),
+                  )),
+              BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.person,
+                    size: 24.0,
+                  ),
+                  title: Text(
+                    "Acount",
+                    style: TextStyle(fontFamily: "Berlin", letterSpacing: 0.5),
+                  )),
+            ],
+          )),
+    );
+  }
 }
 

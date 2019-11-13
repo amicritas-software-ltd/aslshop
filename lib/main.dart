@@ -106,7 +106,6 @@ class _SplashScreenState extends State<SplashScreen> {
                         fontSize: 19.0,
                       ),
                     ),
-                    /// Animation text Treva Shop to choose Login with Hero Animation (Click to open code)
                     Hero(
                       tag: "ASL",
                       child: Text(
